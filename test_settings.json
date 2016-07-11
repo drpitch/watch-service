@@ -1,0 +1,11 @@
+{
+	"matchers": [		
+		{
+			"type": "RegExp",
+			"pattern": "(hello|go(o)+dbye)"
+		}
+	],
+
+	"notifiers": [
+	]
+}

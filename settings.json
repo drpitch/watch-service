@@ -1,0 +1,27 @@
+{
+	"matchers": [
+		{
+			"type": "Sentence",
+			"text": "Louis Armstrong"
+		},
+		{
+			"type": "RegExp",
+			"pattern": "(hello|go(o)+dbye)"
+		}
+	],
+
+	"notifiers": [
+		{
+			"type": "Console"
+		},
+		{
+			"type": "Mail",
+			"options": {
+				"provider": "Dumper",
+				"from": "me@mail.com",
+				"to": "you@mail.com",
+				"subject": "New message from Watcher :-)"
+			}
+		}
+	]
+}
