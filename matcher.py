@@ -16,4 +16,4 @@ class SentenceMatcher(RegExpMatcher):
     Match input lines with a sentence.
     '''
     def __init__(self, sentence):
-        super().__init__(r'\b{0}\b'.format(re.escape(sentence)))
+        super().__init__(r"(^|\s+){0}($|\s+)".format(re.escape(sentence)))
